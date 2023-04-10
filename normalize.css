@@ -194,11 +194,26 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
+/* button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+} */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
 }
 
 /**
@@ -289,9 +304,19 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+/* [type='search'] {
+  -webkit-appearance: textfield; 1
+  outline-offset: -2px; 2
+} */
+
+input[type='search'] {
+  appearance: none; /* 1 */
+  -webkit-appearance: none; /* 1 */
+  border-radius: 0; /* 2 */
+  padding: 0.5rem; /* 2 */
+  border: 1px solid #ccc; /* 2 */
+  outline: none; /* 3 */
+  outline-offset: -2px; /* 3 */
 }
 
 /**
