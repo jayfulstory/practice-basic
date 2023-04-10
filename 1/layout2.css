@@ -1,9 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'nanum';
+  src: url(./../font/NanumSquareAcB.woff);
+}
+
 body {
   margin: 0 auto;
+  font-family: 'nanum';
 }
+
+/* p,
+h4,
+h3,
+h2,
+h1,
+span {
+  transform: rotate(0.03);
+} */
 
 h1 {
   font-size: 40px;
@@ -12,7 +28,7 @@ h1 {
 .main-bg {
   height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./images/bg.jpeg);
+    url(./../images/bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
