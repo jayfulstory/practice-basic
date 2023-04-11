@@ -198,18 +198,23 @@ textarea {
 
 .position {
   position: relative;
+  overflow-y: hidden;
 }
 
 .overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 50%;
+  text-align: center;
+  color: white;
+  top: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: all 0.5s ease;
 }
 
-.overlay:hover {
+.shop-item:hover .overlay {
+  top: 50%;
   opacity: 1;
 }
 
