@@ -176,6 +176,14 @@ textarea {
   padding: 20px 40px;
 }
 
+.item i {
+  background-color: burlywood;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .main-title {
     font-size: 28px;
