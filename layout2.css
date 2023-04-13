@@ -102,6 +102,63 @@ h1 {
   justify-content: center;
 }
 
+/* .input-file::file-selector-button {
+  background: skyblue;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.input-file::file-selector-button:hover {
+  background: blue;
+  color: white;
+} */
+
+/* #file {
+  display: none;
+} */
+
+/* input[type='file']::-webkit-file-upload-button {
+  background: skyblue;
+  border: none;
+} */
+
+#text::-webkit-input-placeholder {
+  color: red;
+}
+
+#range {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  appearance: none;
+  width: 200px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: black;
+  /* outline: none; */
+}
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffc107;
+  cursor: pointer;
+}
+
+#progress {
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* progress 요소의 진행 막대 스타일링 */
+#progress::-webkit-progress-bar {
+  background-image: linear-gradient(to right, #000000, #ffffff 100%);
+}
+#progress::-webkit-progress-value {
+  background-image: linear-gradient(to right, #ffc107, #ff7b07 100%);
+}
+
 .item {
   padding: 20px 40px;
 }
@@ -129,7 +186,7 @@ h1 {
   padding: 10px 40px 40px 40px;
 }
 
-input {
+form input {
   border: 1px solid lightgray;
   border-radius: 2px;
   padding: 10px 20px;
